@@ -73,7 +73,7 @@ Accède à : http://localhost:5173
 
 ### Instructions
 
-Sachant que React tourne sous le port 5173,
+React tourne sous le port 5173,
 Et démarre avec la commande :
 
 ```bash
@@ -81,9 +81,26 @@ npm run dev
 ```
 
 Et Flask sur le port 5000 :
+Pour le lancer :
 
 ```bash
 flask run --host=0.0.0.0
 ```
+
+---
+
+- Dans le `docker-compose.yml` -> Remplir la section Backend et Frontend
+
+---
+
+- Remplir `backend/Dockerfile` afin de créer une image Docker de Flask
+- L'image à utiliser est python:3.11-alpine
+- La commande pour installer les packages : `pip install --no-cache-dir -r requirements.txt`
+
+---
+
+- Remplir `frontend/Dockerfile` afin de créer une image Docker de React
+- L'image à utiliser est node:18-alpine
+- La commande pour installer les packages : `npm install`
 
 ### Made with ❤️ by Daniween
