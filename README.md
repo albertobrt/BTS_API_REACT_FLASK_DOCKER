@@ -4,7 +4,7 @@ Une stack **React Vite + Flask** prête à l'emploi.
 
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![Security](https://img.shields.io/badge/Security-Scanned-brightgreen)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eacc1cb33791488399e0e1c53ad5f9cb)
+![Codacy Badge](https://app.codacy.com/project/badge/Grade/eacc1cb33791488399e0e1c53ad5f9cb)
 
 ---
 
@@ -70,5 +70,20 @@ Backend API : http://localhost:5000
 Accède à : http://localhost:5173
 
 ---
+
+### Instructions
+
+Sachant que React tourne sous le port 5173,
+Et démarre avec la commande :
+
+```bash
+npm run dev
+```
+
+Et Flask sur le port 5000 :
+
+```bash
+flask run --host=0.0.0.0
+```
 
 ### Made with ❤️ by Daniween
