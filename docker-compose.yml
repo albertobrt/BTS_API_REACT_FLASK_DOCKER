@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+
+  frontend:
+ 
+
+  postgres_flask:
+    image: postgres:latest
+    container_name: flask_db
+    restart: always
+    environment:
+      POSTGRES_DB: flaskdb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: userpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
