@@ -27,8 +27,9 @@ Une stack **React Vite + Flask** prête à l'emploi.
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ton-user/api-react-flask.git
-cd api-react-flask
+git clone https://github.com/ton-user/BTS_API_REACT_FLASK_DOCKER.git
+cd BTS_API_REACT_FLASK_DOCKER
+
 ```
 
 ### 2. Lancer avec Docker Compose
@@ -80,8 +81,7 @@ Et démarre avec la commande :
 npm run dev
 ```
 
-Et Flask sur le port 5000 :
-Pour le lancer :
+Et Flask sur le port 5000, pour le lancer :
 
 ```bash
 flask run --host=0.0.0.0
@@ -94,13 +94,15 @@ flask run --host=0.0.0.0
 ---
 
 - Remplir `backend/Dockerfile` afin de créer une image Docker de Flask
-- L'image à utiliser est python:3.11-alpine
+- L'image à utiliser est `python:3.11-alpine`
 - La commande pour installer les packages : `pip install --no-cache-dir -r requirements.txt`
 
 ---
 
 - Remplir `frontend/Dockerfile` afin de créer une image Docker de React
-- L'image à utiliser est node:18-alpine
+- L'image à utiliser est `node:18-alpine`
 - La commande pour installer les packages : `npm install`
+
+---
 
 ### Made with ❤️ by Daniween
