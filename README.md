@@ -105,4 +105,7 @@ flask run --host=0.0.0.0
 
 ---
 
+- Le Backend dépendra de la base de données
+- Le frontend dépendra du Backend
+
 ### Made with ❤️ by Daniween
