@@ -1,0 +1,20 @@
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+frontend/node_modules/
+backend/venv/
+backend/.env
+backend/__pycache__/
+backend/routes/__pycache__/
+backend/models/__pycache__/
+backend/utils/__pycache__/
+postgres_data/
+mysql_data/
