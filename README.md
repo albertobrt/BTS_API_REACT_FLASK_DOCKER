@@ -110,6 +110,12 @@ flask run --host=0.0.0.0
 
 ---
 
+- Tout devra demarrer avec la commande : `docker-compose up -d`
+- Et on pourra y accéder sur http://localhost:5173 pour le frontend
+- et http://localhost:5000 pour le backend
+
+---
+
 - A présent il faut remplir le `security.yml` dans le dossier `.github/worflows`
 - Ce github action devra se déclencher à chaque push sur la branch main.
 - Il y aura un job de build du frontend avec Docker et un test : curl.
