@@ -108,4 +108,13 @@ flask run --host=0.0.0.0
 - Le Backend dépendra de la base de données
 - Le frontend dépendra du Backend
 
+---
+
+- A présent il faut remplir le `security.yml` dans le dossier `.github/worflows`
+- Ce github action devra se déclencher à chaque push sur la branch main.
+- Il y aura un job de build du frontend avec Docker et un test : curl.
+- Et un job de build pour le backend avec Docker et un test : curl.
+
+---
+
 ### Made with ❤️ by Daniween
