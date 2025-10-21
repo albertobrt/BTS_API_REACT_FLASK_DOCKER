@@ -1,10 +1,25 @@
-version: '3.8'
-
 services:
   backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: flask_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+      - DATABASE_URL=postgresql://user:userpassword@postgres_flask:5432/flaskdb
+    depends_on:
+      - postgres_flask
 
   frontend:
- 
+    build: ./frontend
+    container_name: react_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
 
   postgres_flask:
     image: postgres:latest
@@ -17,7 +32,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
